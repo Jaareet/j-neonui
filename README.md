@@ -1,14 +1,10 @@
 <div align = "center">
-    <div class = "configuration">
-        <h3>Configurable UI</h3>
-        <hr width="150">
-    </div>
-    <div class = "preview">
-        <h3>Configs Preview</h3>
-        <hr width="400">
-        <img src = "files/config.png" width="500">
-    </div>
+    <h1><b>I hope u like it <3</b></h1>
+    <h2>j-neonui v2</h2>
+    <h3>Contact me on Discord, in the below redirect in credits, or via email: contacto@jaareet.es</h3>
     <div class = "credits">
-        <h3 style = "color:skyblue;font-weight:500">Credits  <@Jaareet#0097/></h3>
+        <h3 style = "font-weight:bold!important;color:skyblue">Credits <a href="https://discord.com/users/710608592100917420">@jaareet</a></h3>
     </div>
 </div>
+
+> </> J DEVELOPMENT DISCORD: [Click here](https://discord.gg/UVePgAXQPm)

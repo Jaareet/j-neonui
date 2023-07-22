@@ -1,21 +1,26 @@
-fx_version "cerulean"
+-- Resource Metadata
+fx_version 'cerulean'
+games { 'rdr3', 'gta5' }
 
-game       "common"
+author 'Jaareet <contacto@jaareet.es>'
+description 'A FiveM interface'
+version '1.0.0'
+lua54 'yes'
 
-description "Neon UI <@Jaareet#0097>"
+-- What to run
+ui_page 'html/index.html'
 
--- Config Files
+files {
+	'html/**/**/*.*'
+}
 
-shared_scripts {"config.lua"}
+client_scripts {
+	'client/*.l*a',
+}
 
--- Client Files
-
-client_scripts {"client.lua"}
-
--- UI
-
-ui_page         ("html/index.html")
-
--- Files
-
-files           {"**/**/**/**/**/**/*.*"}
+-- Dependencies
+dependencies {
+	'es_extended',
+	'esx_basicneeds',
+	'esx_status'
+}
