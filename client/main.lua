@@ -12,8 +12,13 @@ local function sendNuiMessage(action, data)
 end
 
 
-local function onTick(data)
+local function onTick(data, thirst)
     local stats = {}
+    if thirst ~= nil and type(data) ~= "table" then
+        stats.hunger = data
+        stats.thirst = thirst
+        return sendNuiMessage('update', { status = stats })
+    end
     for k, v in pairs(data) do
         stats[v.name] = v.percent
     end
@@ -31,6 +36,7 @@ local function showNotification(text)
 end
 
 RegisterNetEvent('esx_status:onTick', onTick)
+RegisterNetEvent('hud:client:UpdateNeeds', onTick)
 
 RegisterCommand('hud', function()
     isHudToggled = not isHudToggled
